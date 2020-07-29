@@ -44,7 +44,7 @@ function GamePage() {
   useInterval(() => {
     setTime(time + 1);
 
-    if(time > 120){
+    if(time >= 120){
       localStorage.setItem("currentScore", score);
       storeHighScore(score);
       history.push("/scorepage");
