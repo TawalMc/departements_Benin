@@ -44,10 +44,11 @@ function GamePage() {
   useInterval(() => {
     setTime(time + 1);
 
-    /* if(time > 120){
+    if(time > 120){
       localStorage.setItem("currentScore", score);
       storeHighScore(score);
-    } */
+      history.push("/scorepage");
+    }
 
   }, time > 120 ? null : 1000);
 
@@ -55,14 +56,6 @@ function GamePage() {
     if (value === true) {
       setScore(prevScore => prevScore + 5);
     }
-
-    if(click >= 5){
-      localStorage.setItem("currentScore", score);
-      storeHighScore(score);
-      history.push("/scorepage");
-    }
-
-    //console.log(value);
     setClick(click + 1);
   }
 
@@ -95,7 +88,7 @@ function GamePage() {
       <div id="time-counter">
         <div id="slide">
           <div id="time-evolution"
-            style={{ width: time >= 120 ? 0 : 100 * time / 120 + "%" }}>{console.log(time)}</div>
+            style={{ width: time >= 120 ? 0 : 100 * time / 120 + "%" }}></div>
         </div>
       </div>
     </div>
