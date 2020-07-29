@@ -1,0 +1,95 @@
+#GamePage {
+  min-height: 625px;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#text-question {
+  padding-left: 2%;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#text-region {
+  display: flex;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#text-region #region {
+  width: 50%;
+  text-align: left;
+  color: chocolate;
+}
+
+#text-region #current-score {
+  text-align: right;
+  padding-right: 0px;
+  width: 30%;
+  color: rgb(90, 90, 146);
+}
+
+
+#text-choice {
+  display: flex;
+  flex: 4;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  padding: 5%;
+  margin-top: 5%;
+}
+
+#text-choice .each-choice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 130px;
+  width: 130px;
+  border-radius: 20%;
+  /* margin-bottom: 2%; */
+  background: linear-gradient(145deg, #242a2d, #1f2326);
+  box-shadow: 32px 32px 65px #1e2225,
+    -32px -32px 65px #262c2f;
+}
+
+#text-choice .each-choice p {
+  font-size: 125%;
+  font-family: candara;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#time-counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 30px;
+  width: 100%;
+  /*  background-color: crimson; */
+ /*  border-width: 5px;
+  border-style: solid;
+  border-color: beige; */
+}
+
+#time-counter #slide {
+  height: 10px;
+  width: 90%;
+  border-radius: 43px;
+  background: linear-gradient(145deg, #242a2d, #1f2326);
+  box-shadow: 32px 32px 65px #1e2225,
+    -32px -32px 65px #262c2f;
+}
+
+#slide #time-evolution {
+  height: 100%;
+  width: 0%;
+  background-color: brown;
+  border-radius: 43px;
+}

@@ -1,0 +1,42 @@
+#ScorePage{
+  /*min-height: 750%;*/
+  height: 100%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  /*text-align: center;*/  
+}
+
+#ScorePage .score-section{
+  display: flex;
+}
+
+#ScorePage .score-text{
+  margin: auto;
+  /*background-color: brown;*/
+  width: 60%;
+  
+}
+
+.score-section .score{
+  width: 30%;
+  text-align: right;
+  /*background-color: chocolate;*/
+  padding-right: 8px;
+}
+
+#ScorePage a{
+  text-decoration: none;
+  color: chocolate
+}
+
+#ScorePage .go-to-home{
+  margin-top: 15px;
+  margin-bottom: 30%;
+}
+
+#ScorePage .about{
+  margin-top: 20%;
+  color: chocolate
+}
