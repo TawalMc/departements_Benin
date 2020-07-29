@@ -54,7 +54,8 @@ function shuffleArr(array) {
  */
 export function depSelection(depWillBeSelected) {
   let _dep_selected_arr = shuffleArr(depWillBeSelected);
-  return _dep_selected_arr.slice(0, 4);
+  let _start_choice = getRandInt(0, 8);
+  return _dep_selected_arr.slice(_start_choice, _start_choice + 4);
 }
 
 /**
@@ -78,7 +79,7 @@ var index_choosed = [];
 var index_dep; //= deps[index_choosed]; // the real position of department in Dep_Com_Data
 var dep_choosed_name = []; //= depName(takeDep(index_dep)); // the name of department which will be used to ask question
 
-for(var i=0; i<60; i++){
+for(var i=0; i<80; i++){
   deps = depSelection(all_dep); // a list of departments shuffled
   com.push(comFromDepSelected(deps)); // a list of choice of towns for each departments choosed on top
   index_choosed.push(getRandInt(0, 4)); //contains the index of position of department. Choosed a random departments among the shuffled list of deps

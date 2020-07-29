@@ -44,13 +44,12 @@ function GamePage() {
   useInterval(() => {
     setTime(time + 1);
 
-    if(time >= 120){
+    if(time >= 120 || (click >= 80)){
       localStorage.setItem("currentScore", score);
       storeHighScore(score);
       history.push("/scorepage");
     }
-
-  }, time > 120 ? null : 1000);
+  }, time >= 120 ? null : 1000);
 
   const onChoosed = (e, value, theId) => {
     if (value === true) {
