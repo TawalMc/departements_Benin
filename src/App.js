@@ -21,7 +21,7 @@ function App() {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/gamepage" component={GamePage} />
-          <Route path="/scorePage" component={ScorePage} />
+          <Route path="/scorepage" component={ScorePage} />
         </Switch>
       </div>
     </Router>

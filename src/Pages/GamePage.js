@@ -42,14 +42,13 @@ function GamePage() {
    * Stocker dans localStorage les différents scores: meilleur score et score courant
    */
   useInterval(() => {
-    setTime(time + 1);
-
-    if(time >= 120 || (click >= 80)){
+    if(time >= 120) {
       localStorage.setItem("currentScore", score);
       storeHighScore(score);
       history.push("/scorepage");
     }
-  }, time >= 120 ? null : 1000);
+    setTime(time + 1);
+  }, time > 120 ? null : 1000);
 
   const onChoosed = (e, value, theId) => {
     if (value === true) {
