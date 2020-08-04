@@ -26,7 +26,7 @@ function ScorePage() {
         <p className="score">{`${highScore} pt${highScore > 1 ? "s" : ""}`}</p>
       </div>
       <div className="score-section go-to-home about">
-        <a className="score-text" href="/">Développée par <br/> Version: 0.1 </a>
+        <a className="score-text" href="/">Développée par <br/> Version: 0.1.1 </a>
         <a className="score" href="/">Tawal</a>
       </div>
     </div>
